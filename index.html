@@ -10,10 +10,51 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- for my Responsive design -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: auto; /* Horizontal scrolling enabled */
+      }
+    </style>
   </head>
   <body>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="w-11/12 mx-auto">
+      <!-- nab bar section  -->
+      <section>
+        <div class="flex justify-between border-b mt-4">
+          <div>
+            <button
+              class="text-[#5D5FEF] font-bold hover:bg-[#5D5FEF] hover:text-white p-2 rounded-xl"
+            >
+              News
+            </button>
+            <button
+              class="text-[#5D5FEF] font-bold hover:bg-[#5D5FEF] hover:text-white p-2 rounded-xl"
+            >
+              Portal
+            </button>
+          </div>
+          <div class="mb-4">
+            <button
+              class="text-[#5D5FEF] font-bold hover:bg-[#5D5FEF] hover:text-white p-2 rounded-xl"
+            >
+              News
+            </button>
+            <button class="text-[#A3A3A3] font-normal">Blog</button>
+          </div>
+        </div>
+        <!-- news container  -->
+        <div class="news_container">
+          <p class="hover:text-[#5D5FEF] hover:bg-[#EEEFFF] p-2">political</p>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+    </section>
   </body>
 </html>

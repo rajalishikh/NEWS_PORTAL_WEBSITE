@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="garden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -63,14 +63,96 @@
             placeholder="Search by ID"
           />
           <button
-            class="absolute right-0 bg-slate-700 text-white px-6 p-2.5 rounded-lg"
+            class="absolute right-0 bg-slate-700 text-white px-6 p-2.5 rounded-lg hover:bg-[#5D5FEF] hover:text-white"
           >
             Search
           </button>
         </label>
       </div>
+      <!-- sort by view start  -->
+      <div class="flex justify-between mt-4">
+        <div>
+          <p class="text-[#000000] font-medium text-sm">
+            Sort by view :
+            <input
+              class="border border-sky-500 p-2"
+              type="number"
+              placeholder="Default"
+            />
+          </p>
+        </div>
+        <div class="flex">
+          <button
+            class="text-sm text-[#5D5FEF] font-bold hover:bg-[#5D5FEF] hover:text-white p-1 rounded-xl"
+          >
+            Today's pick
+          </button>
+          <button
+            class="text-sm text-[#5D5FEF] font-bold hover:bg-[#5D5FEF] hover:text-white p-1 rounded-xl"
+          >
+            Trending
+          </button>
+        </div>
+      </div>
     </section>
-    <section></section>
+    <section class="mt-6">
+      <!-- card container -->
+      <div class="card card-side bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+            alt="Movie"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">New movie is released!</h2>
+          <p>Click the button to watch on Jetflix app.</p>
+          <div class="card-actions flex justify-between items-center gap-4">
+            <div class="flex gap-1 items-center">
+              <div>
+                <img
+                  src="image/photo-1438761681033-6461ffad8d80.jpg"
+                  alt=""
+                  srcset=""
+                  class="w-12 h-11"
+                  id="image_shape"
+                />
+              </div>
+              <div>
+                <p>
+                  <span class="text-sm" style="display: block">name</span>
+                  <span class="text-sm" style="display: block"
+                    >date of birth</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div>
+                <img class="w-8" src="image/Capture.PNG" alt="" srcset="" />
+              </div>
+              <div>
+                <p class="text-sm">1.5<span>M</span></p>
+              </div>
+            </div>
+            <div>
+              <div class="rating rating-sm">
+                <input type="radio" name="rating-9" class="rating-hidden" />
+                <input type="radio" name="rating-9" class="mask mask-star-2" />
+                <input type="radio" name="rating-9" class="mask mask-star-2" />
+                <input type="radio" name="rating-9" class="mask mask-star-2" />
+                <input type="radio" name="rating-9" class="mask mask-star-2" />
+                <input type="radio" name="rating-9" class="mask mask-star-2" />
+              </div>
+            </div>
+            <div>
+              <p class="w-16">➡️</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cart container end -->
+    </section>
     <section></section>
   </body>
 </html>

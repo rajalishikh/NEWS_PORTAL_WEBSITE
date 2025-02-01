@@ -5,9 +5,19 @@ const load_data=async()=>{
     const convert_json=await bring_data.json()
      let main_data=convert_json.data.news_category
     main_data.forEach((item)=>{
-        console.log(item.category_name)
+        show_data_news(item)
 
     })
 }
 // call the function
 load_data()
+// show data 
+function show_data_news(data){
+    console.log(data)
+    const container=document.getElementById('news_container');
+    const creteElement=document.createElement('div')
+    creteElement.innerHTML=`<p onclick="details(${data.category_id})" class="hover:text-[#5D5FEF] hover:bg-[#EEEFFF] p-2">${data.category_name}</p>`
+    container.appendChild(creteElement)
+
+}
+// function show details

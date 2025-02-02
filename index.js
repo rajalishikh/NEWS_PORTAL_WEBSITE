@@ -36,16 +36,16 @@ async function details(id){
         
         create_div_for_details.innerHTML = `
         <div class="card card-side bg-white shadow-xl mb-4">
-              <figure>
+              <figure class='w-2/6'>
                 <img
                   src="${detail.thumbnail_url}"
                   alt="Movie"
-                  class='w-52'
+                  class='sm:w-full md:w-full lg:w-full'
                 />
               </figure>
               <div class="card-body">
-                <h2 class="card-title">New movie is released!</h2>
-                <p>Click the button to watch on Jetflix app.</p>
+                <h2 class="text-sm md:text-xl lg:text-xl text-black font-medium">${detail.title}</h2>
+                <p class="text-[#949494] text-sm">${detail.details.slice(0,500)}</p>
                 <div class="card-actions flex justify-between items-center gap-4">
                   <div class="flex gap-1 items-center">
                     <div>
@@ -53,14 +53,14 @@ async function details(id){
                         src="${detail?.author.img}"
                         alt=""
                         srcset=""
-                        class="w-12 h-11"
+                        class="w-18 h-11"
                         id="image_shape"
                       />
                     </div>
                     <div>
                       <p>
-                        <span class="text-sm" style="display: block">name</span>
-                        <span class="text-sm" style="display: block">date of birth</span>
+                        <span class="text-sm" style="display: block">${detail?.author?.name}</span>
+                        <span class="text-sm" style="display: block">${detail?.author?.published_date}</span>
                       </p>
                     </div>
                   </div>
